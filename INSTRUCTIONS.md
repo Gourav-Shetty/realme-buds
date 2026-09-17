@@ -1,56 +1,53 @@
-# Instructions for realme Buds Controller
+# Instructions for realme Buds Controller (Windows & Android)
 
-Follow these simple steps to run and use the application on any Windows PC.
-
----
-
-## Prerequisites
-- **Operating System**: Windows 10 or Windows 11 (64-bit)
-- **Bluetooth**: PC must have Bluetooth enabled
-- **Earbuds**: realme Buds (T200x, T300, T100, Air series, etc.) paired to your PC
+This document provides step-by-step instructions for running the realme Buds Controller on **Windows** and **Android**.
 
 ---
 
-## Step 1: Pair Earbuds to Windows
-1. Place your earbuds in their charging case with the lid open.
-2. Press and hold the pairing button on the case until the status LED begins to blink.
-3. On your PC, open **Settings** > **Bluetooth & devices** > **Add device** > **Bluetooth**.
-4. Select your realme buds from the list and complete pairing.
+## 🪟 Windows Instructions
+
+### Prerequisites
+- **OS**: Windows 10 or Windows 11 (64-bit)
+- **Bluetooth**: PC with Bluetooth turned on
+- **File**: `Realme_Buds_T200x.exe`
+
+### Steps
+1. **Pair Earbuds**:
+   - Open Windows **Settings** > **Bluetooth & devices** > **Add device**.
+   - Put your earbuds in pairing mode (hold the case button until the LED blinks).
+   - Connect your realme buds.
+2. **Run Application**:
+   - Double-click **`Realme_Buds_T200x.exe`**.
+   - It will automatically detect your Bluetooth COM port (commonly `COM4` or `COM3`).
+3. **Connect**:
+   - If not connected automatically, pick your port from the dropdown and click **Connect**.
+   - The badge will turn 🟢 **Connected**.
+4. **Control**:
+   - Click any ANC tile (Noise Cancelling, Transparency, Normal, ANC Alternate) or flip the Game Mode switch.
 
 ---
 
-## Step 2: Run the Application
-1. Double-click **`Realme_Buds_T200x.exe`**.
-2. No installation is required. It opens directly.
-3. The app will automatically scan for the Bluetooth Serial Port and connect.
+## 🤖 Android Instructions
 
----
+### Prerequisites
+- **OS**: Android 7.0 (Nougat) up to Android 15 / 16
+- **Bluetooth**: Bluetooth turned on
+- **File**: `Realme_Buds_Controller.apk`
 
-## Step 3: If Not Automatically Connected
-1. If the status badge at top right says **Disconnected**:
-2. Click the **🔄 (Refresh)** button next to the port dropdown.
-3. Select your Bluetooth COM port from the dropdown menu (commonly `COM3`, `COM4`, etc.).
-4. Click **Connect**.
-5. Once connected, the badge turns green (🟢 **Connected**).
-
----
-
-## Step 4: Using the Controls
-
-### Noise Control (ANC)
-Click any of the 4 cards:
-- **Noise Cancelling (🔇)**: Filters out background ambient noise.
-- **Transparency (👂)**: Allows external sounds and human voices to pass through.
-- **Normal Mode (⚪)**: Standard playback without filtering.
-- **ANC Alternate (⚡)**: Alternate noise reduction curve.
-
-*Note: On models without ANC hardware (such as Realme Buds T100), the ANC buttons will have no effect.*
-
-### Game Mode (Low Latency)
-- Click the switch to toggle **Game Mode** between **ON** and **OFF**.
-- When turned ON, audio delay is reduced to ~50-88ms for video and gaming sync.
-- You will hear the prompt audio chime in your earbuds confirming the switch.
-
-### Protocol Monitor / Debug Log
-- Click **▼ Show Activity & Protocol Monitor** at the bottom to expand the live packet log.
-- This displays real-time `[TX]` (transmitted) and `[RX]` (received) hex communication with your earbuds.
+### Steps
+1. **Transfer & Install**:
+   - Download or copy **`Realme_Buds_Controller.apk`** to your phone.
+   - Tap the APK file in your phone's file manager and tap **Install**.
+   - If prompted, allow installation from unknown sources.
+2. **Pair Earbuds**:
+   - In your phone's **Bluetooth Settings**, pair your realme Buds.
+3. **Open the App**:
+   - Launch **realme Buds** from your app drawer.
+   - When prompted, tap **Allow** for Bluetooth permissions.
+4. **Connect**:
+   - Your paired realme Buds will appear in the device selector.
+   - Tap **Connect**.
+5. **Control**:
+   - Tap any of the 4 Noise Control cards to instantly switch ANC modes.
+   - Toggle the **Game Mode switch** for low latency gaming and video sync.
+   - Expand the **Activity & Protocol Monitor** to watch real-time `[TX]` and `[RX]` packet communication!

@@ -1,76 +1,70 @@
-# 🎧 realme Buds Windows Controller
+# 🎧 realme Buds Controller (Windows & Android)
 
-A clean, modern, ultra-fast standalone Windows desktop application for controlling **realme Buds** features directly from your PC.
+A clean, modern, ultra-fast application for controlling **realme Buds** directly from your **Windows PC** and **Android Phone**.
 
-Easily toggle **Active Noise Cancellation (ANC)**, **Transparency Mode**, and **Super Low-Latency Gaming Mode** without touching your phone.
+Easily toggle **Active Noise Cancellation (ANC)**, **Transparency Mode**, and **Super Low-Latency Gaming Mode** with zero bloat.
 
 ---
 
-## ⚡ Highlights
+## 📦 Downloads & Builds
 
-- **Single Portable `.exe`**: 100% standalone—no Python installation or extra dependencies required.
-- **Fast & Responsive**: Sub-second startup time with fluid 60fps asynchronous Bluetooth communication.
-- **Auto-Discovery**: Automatically scans and detects Bluetooth RFCOMM serial ports on Windows.
-- **Live Activity Monitor**: Built-in collapsible protocol inspector to monitor raw hex transmission (`TX`/`RX`) in real time.
-- **Settings Persistence**: Remembers your preferred COM port and auto-connects on app launch.
+Pre-built standalone releases are available directly in this repository:
+
+| Platform | Download File | Size | Description |
+| :--- | :--- | :---: | :--- |
+| 🪟 **Windows** | **[`Realme_Buds_T200x.exe`](Realme_Buds_T200x.exe)** | ~32 MB | **Standalone Portable `.exe`**<br>• Runs instantly with no Python or drivers needed.<br>• Supports Windows 10 & 11 (64-bit). |
+| 🤖 **Android** | **[`Realme_Buds_Controller.apk`](Realme_Buds_Controller.apk)** | ~11 MB | **Native Android APK**<br>• Built with Jetpack Compose & Kotlin.<br>• Supports Android 7.0 to Android 15/16. |
+
+---
+
+## ⚡ Key Features
+
+- **Cross-Platform Native Experience**: Dedicated standalone builds for both Windows and Android with a matching realme electric yellow dark theme.
+- **Active Noise Cancellation (ANC)**: Switch between 4 modes:
+  - 🔇 **Noise Cancelling**: Blocks ambient background noise.
+  - 👂 **Transparency**: Amplifies surrounding voices and ambient audio.
+  - ⚪ **Normal Mode**: Standard playback without active filtering.
+  - ⚡ **ANC Alternate**: Alternative noise suppression curve.
+- **Low-Latency Game Mode**: One-tap toggle for 50–88ms super low audio latency.
+- **Automatic Device Discovery**: Scans and lists your paired Bluetooth audio devices automatically.
+- **Live Activity Monitor**: Expandable console displaying real-time raw hex communication (`TX` and `RX`) with the earbuds.
 
 ---
 
 ## 📱 Supported Devices
 
-The application utilizes the universal **Realme Link / OPPOv1** Bluetooth protocol:
+Uses the universal **Realme Link / OPPOv1** Bluetooth RFCOMM protocol:
 
 | Device | Game Mode (Low Latency) | Active Noise Cancellation (ANC) | Transparency Mode |
 | :--- | :---: | :---: | :---: |
 | **realme Buds T200x** | ✅ Supported | ✅ Supported | ✅ Supported |
 | **realme Buds T300** | ✅ Supported | ✅ Supported | ✅ Supported |
 | **realme Buds T100 / T110** | ✅ Supported | ❌ *(Hardware has no ANC)* | ❌ *(Hardware has no ANC)* |
-| **realme Buds Air Series (Air 3, Air 5, Air 6)** | ✅ Supported | ✅ Supported | ✅ Supported |
+| **realme Buds Air Series (Air 3, Air 5, Air 6, etc.)** | ✅ Supported | ✅ Supported | ✅ Supported |
 | **Compatible OPPO / OnePlus Buds** | ✅ Supported | ✅ Supported | ✅ Supported |
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 Quick Setup & Usage
 
-### 1. Pair Your Earbuds
-1. Open Windows **Settings** > **Bluetooth & devices**.
-2. Put your realme earbuds into pairing mode (open the case and hold the button until the LED blinks).
-3. Connect your earbuds to Windows.
+### 🪟 Windows Setup
+1. Pair your realme Buds to your PC via Windows Bluetooth settings.
+2. Download and double-click **[`Realme_Buds_T200x.exe`](Realme_Buds_T200x.exe)**.
+3. The app will auto-detect your Bluetooth port (or pick your `COM` port from the dropdown).
+4. Click **Connect** and switch modes instantly!
 
-### 2. Launch the App
-1. Run **`Realme_Buds_T200x.exe`**.
-2. The app will automatically scan for Bluetooth Serial Ports (e.g., `COM4`).
-3. If not connected automatically:
-   - Select your earbud port from the dropdown menu.
-   - Click **Connect**.
-4. The status badge will switch to 🟢 **Connected**.
-
-### 3. Control Your Audio
-- Click any of the **Noise Control** tiles:
-  - 🔇 **Noise Cancelling**: Blocks ambient background noise.
-  - 👂 **Transparency**: Amplifies ambient voices and surroundings.
-  - ⚪ **Normal Mode**: Turns off noise filtering.
-  - ⚡ **ANC Alternate**: Alternate noise suppression curve.
-- Toggle the **Game Mode switch** for super low-latency audio sync while gaming or watching videos.
-
----
-
-## 🔍 How to Find Your COM Port Manually
-
-If Windows does not automatically detect your port:
-1. Press `Win + R`, type `devmgmt.msc`, and press **Enter** to open **Device Manager**.
-2. Expand **Ports (COM & LPT)**.
-3. Look for **Standard Serial over Bluetooth link** (e.g., `COM3`, `COM4`, `COM5`).
-4. Select that port in the app dropdown and click **Connect**.
-
-Alternatively, in Windows Bluetooth settings:
-- Go to `Settings` > `Bluetooth & devices` > `Devices` > `More Bluetooth settings` > **COM Ports** tab to view the assigned outgoing port.
+### 🤖 Android Setup
+1. Pair your realme Buds to your phone in Android Bluetooth settings.
+2. Download **[`Realme_Buds_Controller.apk`](Realme_Buds_Controller.apk)** and tap **Install** *(enable "Install from unknown sources" if prompted)*.
+3. Open the **realme Buds** app and allow Bluetooth permissions.
+4. Select your earbuds from the device dropdown and tap **Connect**.
+5. Tap any ANC mode or toggle the Game Mode switch!
 
 ---
 
 ## 🛠️ Technical Protocol Overview
 
-Communication is handled over Bluetooth RFCOMM (default baud: `115200`):
+Communication is handled directly over Bluetooth RFCOMM (Serial Port Profile, UUID `00001101-0000-1000-8000-00805F9B34FB`):
 
 - **Transport Layer**: OPPOv1 7-bit variable length packet framing:
   ```text
@@ -80,7 +74,7 @@ Communication is handled over Bluetooth RFCOMM (default baud: `115200`):
   ```text
   [Command LE (2B)] [Transfer ID (1B)] [Payload Length LE (2B)] [Payload (NB)]
   ```
-- **Key Commands**:
+- **Commands**:
   - `0x0403`: Feature Switch (`[0x06, 0x01]` for Game Mode ON, `[0x06, 0x00]` for OFF)
   - `0x0404`: Noise Reduction (`[0x01, 0x01, Value]`: `0x08` ANC, `0x02` Transparency, `0x01` Normal)
 
