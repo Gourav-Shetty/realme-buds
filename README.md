@@ -19,13 +19,13 @@ Pre-built standalone releases are available directly in this repository:
 
 ## ⚡ Key Features
 
-- **Cross-Platform Native Experience**: Dedicated standalone builds for both Windows and Android with a matching realme electric yellow dark theme.
-- **Active Noise Cancellation (ANC)**: Switch between 4 modes:
-  - 🔇 **Noise Cancelling**: Blocks ambient background noise.
+- **Cross-Platform Native Experience**: Dedicated standalone builds for both Windows and Android with a matching realme clean, minimalist white UI.
+- **Live Battery Status**: Real-time telemetry monitoring for Left Earbud (`🎧 L`), Right Earbud (`🎧 R`), and Charging Case (`🔋 Case`), updated live periodically.
+- **Active Noise Cancellation (ANC)**: Switch between 3 modes:
+  - 🔇 **Noise cancellation**: Blocks ambient background noise.
+  - ⚪ **Off**: Standard playback without active filtering.
   - 👂 **Transparency**: Amplifies surrounding voices and ambient audio.
-  - ⚪ **Normal Mode**: Standard playback without active filtering.
-  - ⚡ **ANC Alternate**: Alternative noise suppression curve.
-- **Low-Latency Game Mode**: One-tap toggle for 50–88ms super low audio latency.
+- **Low-Latency Game Mode**: One-tap toggle for super low audio latency.
 - **Automatic Device Discovery**: Scans and lists your paired Bluetooth audio devices automatically.
 - **Live Activity Monitor**: Expandable console displaying real-time raw hex communication (`TX` and `RX`) with the earbuds.
 
@@ -77,6 +77,7 @@ Communication is handled directly over Bluetooth RFCOMM (Serial Port Profile, UU
 - **Commands**:
   - `0x0403`: Feature Switch (`[0x06, 0x01]` for Game Mode ON, `[0x06, 0x00]` for OFF)
   - `0x0404`: Noise Reduction (`[0x01, 0x01, Value]`: `0x08` ANC, `0x02` Transparency, `0x01` Normal)
+  - `0x0106`: Battery Telemetry Query (`AA 07 00 00 06 01 [Seq] 00 00`, returns percentages for Left `0x01`, Right `0x02`, Case `0x03`)
 
 ---
 
