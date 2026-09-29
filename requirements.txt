@@ -1,0 +1,7 @@
+# Runtime dependencies
+pyserial
+Pillow
+customtkinter
+
+# Build (PyInstaller one-file Windows executable)
+pyinstaller

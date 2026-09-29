@@ -1,0 +1,39 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---- PyInstaller ----
+# Root Realme_Buds_T200x.exe is a tracked release artifact; only the
+# intermediates produced by build_exe.py are ignored.
+/build/
+/dist/
+*.tar
+
+# ---- Android / Gradle ----
+android-app/.gradle/
+android-app/.kotlin/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+android-app/keystore.properties
+android-app/captures/
+android-app/.cxx/
+android-app/*.iml
+
+# ---- IDE / editor ----
+.idea/
+.vscode/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs / misc ----
+*.log
