@@ -31,7 +31,7 @@ from t200x_core import (
 # ============================================================
 
 APP_NAME = "realme Buds T200x"
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.3.0"
 
 UI_PUMP_MS = 20          # ui_queue pump interval
 LOG_MAX_LINES = 1000     # hard cap for the activity log textbox
